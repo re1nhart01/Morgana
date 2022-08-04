@@ -4,29 +4,18 @@ import {useController, useRoute} from "../internal/decorators";
 import {Request, Response} from "express";
 import {bindDtoWithRequest} from "../internal/dto";
 import {RegisterUserDto} from "../dto/RegisterUser.dto";
+import {AuthService} from "../services/auth.service";
 
 @useController('auth')
 class AuthController extends BaseController<any> {
-    constructor(public userService: UserService) {
-        super(userService);
+    constructor(public authService: AuthService) {
+        super(authService);
+        this.authService = new AuthService()
     }
-
 
     @useRoute('/register', 'post')
     public Register(request: Request, response: Response) {
-        console.log(request.body)
-        const {dto, isError, missingFields} = bindDtoWithRequest(new RegisterUserDto(), request.body)
-        if (isError) {
-            response.send({
-                statusCode: 500,
-                statusMessage: "Internal error!",
-                missing: missingFields
-            })
-            return;
-        }
-        response.send({
-            isAlive: dto,
-        })
+        response.send(this.authService.registerService(this.bindJSON(new RegisterUserDto(), request.body)))
     }
 
 }

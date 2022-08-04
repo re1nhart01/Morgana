@@ -1,4 +1,6 @@
-import {METHODS} from "./types";
+import {Dto, METHODS} from "./types";
+import {bindDtoWithRequest} from "./dto";
+import {RegisterUserDto} from "../dto/RegisterUser.dto";
 
 
 /***

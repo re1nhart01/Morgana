@@ -1,11 +1,29 @@
 import {BaseDto} from "./Base.dto";
+import {DtoField} from "../internal/types";
+
+
+
 
 export class RegisterUserDto extends BaseDto {
-    username: string;
-    password: string;
+    username: DtoField;
+    password: DtoField;
+    email: DtoField;
     constructor() {
         super();
-        this.username = "";
-        this.password = "";
+        this.username = {
+            defaultValue: "",
+            type: "STRING",
+            required: true,
+        };
+        this.password = {
+            defaultValue: "",
+            type: "STRING",
+            required: true,
+        };
+        this.email = {
+            defaultValue: null,
+            type: "STRING",
+            required: true,
+        };
     }
 }
