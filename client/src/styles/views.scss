@@ -1,0 +1,167 @@
+.screens_welcome_authForm {
+  width: 50vw;
+  height: 60vh;
+  background-color: $main_color;
+  z-index: 20;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  margin-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.screens_welcome_registerForm {
+  width: 50vw;
+  height: 75vh;
+  background-color: $main_color;
+  z-index: 20;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ant-form-item-required {
+  @include antd-labels;
+}
+
+.ant-form-item-optional label {
+  @include antd-labels;
+}
+
+.screens_welcome_body {
+  position: absolute;
+  top: 25%;
+  padding-left: 2vw;
+  z-index: 19;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.screens_welcome_body_register {
+  top: 15%;
+}
+
+.screens_welcome_body_titles_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 4vw;
+  margin-top: 4vh;
+}
+
+.screens_welcome_body_titles {
+  max-width: 40vw;
+}
+
+.screens_welcome_authForm_header {
+  font-family: "SF Pro Display", serif;
+  font-weight: 700;
+  text-align: left;
+  font-size: 2.225rem;
+  margin-bottom: 3vh;
+  color: $white;
+}
+
+.screens_welcome_authForm_subheader {
+  font-family: "SF Pro Display", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 3vh;
+  color: $white;
+}
+
+.screens_welcome_authForm_content {
+  font-family: "SF Pro Display", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 3vh;
+  color: $white;
+}
+
+
+.screens_welcome_authForm_form {
+  width: 100%;
+  padding-right: 15%;
+}
+
+.screens_welcome_authForm_loginBtn  {
+  background: transparent;
+  border: 1px solid $button_border;
+  width: 100%;
+}
+
+.screens_welcome_authForm_loginBtn span {
+  font-family: "SF Pro Display", serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+.screens_welcome_authForm_no-account {
+  @include flex_jc_ai(row, center, center);
+  span {
+    font-family: "SF Pro Display", serif !important;
+    font-weight: 400 !important;
+    font-size: 0.8rem !important;
+    border: none !important;
+    color: $white;
+  }
+  button span {
+    font-family: "SF Pro Display", serif !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    border: none !important;
+    color: $button_border;
+    text-decoration: underline;
+  }
+}
+
+.screens_global_primary_input {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-radius: 8px !important;
+  color: $white !important;
+  font-family: "SF Pro Display", serif !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  border: none !important;
+}
+
+.screens_welcome_authForm_checkbox span {
+  color: $white;
+  font-family: "SF Pro Display", serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+
+.screens_global_primary_textarea {
+  max-height: 100px;
+}
+
+.animated_splash_el {
+  position: absolute;
+  opacity: 1;
+  width: 2px;
+  height: 24vh;
+  margin-top: -12vh;
+  transform-origin: 50% 100%;
+  background: white;
+}

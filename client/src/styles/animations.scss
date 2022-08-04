@@ -1,0 +1,32 @@
+
+
+
+.reveal_left {
+  animation: reveal_left_animation 1s linear;
+}
+
+@keyframes reveal_left_animation {
+  from {
+    transform : translateX(-10em);
+    opacity: 0;
+  }
+  to {
+    transform : translateX(0em);
+    opacity: 1;
+  }
+}
+
+.reveal_right {
+  animation: reveal_right_animation 1s linear;
+}
+
+@keyframes reveal_right_animation {
+  from {
+    transform : translateX(10em);
+    opacity: 0;
+  }
+  to {
+    transform : translateX(0em);
+    opacity: 1;
+  }
+}

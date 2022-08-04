@@ -1,0 +1,68 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.__internal__top-bar {
+    -webkit-app-region: drag;
+    height: 40px;
+    width: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-user-select: none;
+    position: fixed;
+    z-index: 999;
+}
+
+.__internal__top-bar_drawer {
+    padding-right: 2vw;
+}
+
+.__internal__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 1s ease-in-out;
+    -webkit-app-region: no-drag;
+}
+
+.__internal__button img {
+    width: 14px;
+    height: 14px;
+}
+
+.__internal__button:hover img {
+    transition: 1s ease-in;
+    filter: invert(85%) sepia(48%) saturate(7470%) hue-rotate(232deg) brightness(88%) contrast(93%);
+}
+
+.__internal__button:hover {
+
+}
+
+#__internal_application_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    padding-top: 40px;
+}
+
+
+#root {
+    min-width: 100vw;
+    min-height: 100vh;
+}

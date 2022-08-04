@@ -1,0 +1,37 @@
+
+
+
+@mixin flex_jc_ai($dir, $jc, $ai) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+
+@mixin antd-labels {
+  color: $white !important;
+  font-family: "SF Pro Display", serif !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+}
+
+@mixin padding_horizontal($left, $right) {
+  padding-left: $left;
+  padding-right: $right;
+}
+
+@mixin padding_vertical($top, $bot) {
+  padding-top: $top;
+  padding-bottom: $bot;
+}
+
+@mixin margin_horizontal($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin margin_vertical($top, $bot) {
+  margin-top: $top;
+  margin-bottom: $bot;
+}
