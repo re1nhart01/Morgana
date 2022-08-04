@@ -14,8 +14,8 @@ class AuthController extends BaseController<any> {
         this.authService = new AuthService()
     }
 
-    
-    @useDto(new RegisterUserDto())
+
+    @useDto(RegisterUserDto)
     @useRoute('/register', 'post')
     public Register(request: Request, response: MorganaResponse) {
         response.send(this.authService.registerService(response.cobol));

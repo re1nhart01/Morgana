@@ -14,6 +14,8 @@ export class RegisterUserDto extends BaseDto {
             defaultValue: "",
             type: "STRING",
             required: true,
+            min: 5,
+            max: 20
         };
         this.password = {
             defaultValue: "",

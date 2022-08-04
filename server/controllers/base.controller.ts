@@ -20,7 +20,7 @@ export abstract class BaseController<T extends BaseService> implements BaseContr
         return BaseController._expressRouter;
     }
 
-    public bindJSON = <T extends BaseDto>(dto: T, body: any) => {
+    public bindJSON = <T extends BaseDto>(dto: {new (): T}, body: any) => {
         return bindDtoWithRequest(dto, body)
     }
 

@@ -1,40 +1,45 @@
 import {BaseDto} from "../dto/Base.dto";
-import {Cobol, DtoField, ErrorField} from "./types";
+import {Cobol, Dto, DtoField, ErrorField} from "./types";
 
-export const bindDtoWithRequest = <T extends BaseDto>(dto: T, fields: any): Cobol => {
+export const bindDtoWithRequest = <T extends BaseDto>(dto: {new (): T}, fields: any): Cobol => {
     try {
-        if (!(dto instanceof BaseDto)) {
+        const newDto = new dto()
+        if (!(newDto instanceof BaseDto)) {
             throw new Error(`Current Dto does not extends BaseDto!`)
         }
         let isError = false;
         let errorsField: Array<ErrorField> = [];
-        for (let i in dto) {
-            const field: DtoField = dto[i] as any;
-            const isRequestFieldMin = field.min !== void 0 && fields[i] >= field.min;
-            const isRequestFieldMax = field.max !== void 0 && fields[i] <= field.max;
+        for (let i in newDto) {
+            const field: DtoField = newDto[i] as any;
             const errorField: ErrorField | any = {}
+            console.log(field, fields)
             if (fields[i] === void 0 && field.required) {
                 isError = true;
                 errorField.isMissing = true;
                 errorField.name = i;
             }
-            if (isRequestFieldMin) {
-                isError = true;
-                errorField.name = i;
-                errorField.isLessThanMin = isRequestFieldMin;
-            }
-            if (isRequestFieldMax) {
-                isError = true;
-                errorField.name = i;
-                errorField.isLongerThanMax = isRequestFieldMax;
+            if (fields[i] !== void 0) {
+                const isRequestFieldMin = fields[i].length <= field.min;
+                const isRequestFieldMax = fields[i].length >= field.max;
+                console.log(fields[i].length, field.min)
+                if (field.min !== void 0 && isRequestFieldMin) {
+                    isError = true;
+                    errorField.name = i;
+                    errorField.isLessThanMin = isRequestFieldMin;
+                }
+                if (field.max !== void 0 && isRequestFieldMax) {
+                    isError = true;
+                    errorField.name = i;
+                    errorField.isLongerThanMax = isRequestFieldMax;
+                }
             }
 
-            if (JSON.stringify(errorsField) !== "{}") {
+            if (JSON.stringify(errorField) !== "{}") {
                 errorsField.push(errorField)
             }
-            dto[i] = fields[i];
+            newDto[i] = fields[i];
         }
-        return {dto, isError, errorsField, errorMessage: ""}
+        return {dto: newDto, isError, errorsField, errorMessage: ""}
     } catch (ex) {
         console.log(ex)
         return {dto, isError: true, errorsField: [], errorMessage: ex}
