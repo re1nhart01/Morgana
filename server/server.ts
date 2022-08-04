@@ -1,4 +1,5 @@
-import {GovnoController} from "./controllers/govno.controller";
+import express = require("express");
+import {AuthController} from "./controllers/auth.controller";
 
 require('dotenv').config({path: require('path').join(__dirname, 'env', '.env')})
 import {UsersController} from "./controllers/users.controller";
@@ -15,8 +16,12 @@ class Application extends MorganaApplication {
         return [UserModel];
     }
 
+    usings(): void {
+       this.appInstance.use(express.json())
+    }
+
     public get controllers(): any {
-        return [UsersController, GovnoController]
+        return [UsersController, AuthController]
     }
 }
 

@@ -33,10 +33,12 @@ export abstract class MorganaApplication {
     }
 
     public abstract get controllers(): any[];
-    public abstract get models(): any[]
+    public abstract get models(): any[];
+    public abstract usings(): void;
 
-    public run() {
+    public async run() {
         try {
+            await this.usings()
             require('../db/database')
             useAllRoutes(this._application, this.controllers)
             useAllModels(this.models)

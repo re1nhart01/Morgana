@@ -24,7 +24,7 @@ export function useRoute(path: string, method: METHODS) {
             method,
         }
         setTimeout(() => {
-            target.router[method](`/${target.__usafe__group}/${path}`, target[key])
+            target.router[method](`/${target.__usafe__group}${path}`, target[key])
         }, 0)
     }
 }
@@ -51,7 +51,7 @@ export function useMiddlewareRoute(path: string, method: METHODS, ...middlewareC
         }
         console.log(descriptor.value.toString())
         setTimeout(() => {
-            target.router[method](`/${target.__usafe__group}/${path}`, ...middlewareCallbacks, target[key])
+            target.router[method](`/${target.__usafe__group}${path}`, ...middlewareCallbacks, target[key])
         }, 0)
     }
 }

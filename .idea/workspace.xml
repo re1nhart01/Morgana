@@ -5,217 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8650e467-93ad-4d87-ae4c-9cd4e9166cae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BuvetteFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buv.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/internal/icons/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/internal/icons/drower.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/internal/icons/expand.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/internal/icons/minimize.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/internal/icons/shrink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/internal/internal_css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/internal/internal_events.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/internal/preload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/internal/topbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Black.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-BlackItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-BlackItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-BlackItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-BoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ExtraLight.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ExtraLight.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ExtraLight.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ExtraLightItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ExtraLightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ExtraLightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Heavy.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Heavy.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Heavy.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Heavy.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-HeavyItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-HeavyItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-HeavyItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-HeavyItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-LightItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-LightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-LightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-RegularItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-RegularItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-RegularItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-RegularItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-SemiBold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-SemiBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-SemiBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-SemiBoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-SemiBoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-SemiBoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Thin.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ThinItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ThinItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/Mont-ThinItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/mont.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Black.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-BlackItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-BlackItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-BlackItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-BoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Heavy.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Heavy.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Heavy.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Heavy.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-HeavyItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-HeavyItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-HeavyItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-HeavyItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-LightItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-LightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-LightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-MediumItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-MediumItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-MediumItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-RegularItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-RegularItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-RegularItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-RegularItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Semibold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Semibold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Semibold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Semibold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-SemiboldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-SemiboldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-SemiboldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-SemiboldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Thin.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-ThinItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-ThinItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-ThinItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Ultralight.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Ultralight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Ultralight.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-Ultralight.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-UltralightItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-UltralightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-UltralightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/SFProDisplay-UltralightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/fonts/sf/sf.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/icons.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/bll/CurrentUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/bll/GlobalLogic.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/bll/NavigationConfig.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/bll/ServerSettings.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/global/HomeScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/global/RegisterScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/global/SplashScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/global/WelcomeScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/global/controllers/WelcomeContainer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/segments/AnimatedSphere.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/segments/Auth/SignInForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/segments/Auth/SignInView.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/segments/Auth/SignUpForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/segments/Auth/SignUpView.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/hoc/reduxHOC.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/hooks/redux.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/reducers/AuthReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/redux/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/animations.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/components.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/screens.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/styles/views.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/base.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/govno.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/users.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/db/database.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/env/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/internal/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/internal/decorators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/internal/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/internal/utilities.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/middleware/sda.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/UserModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/services/base.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/services/user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/types/base.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/types/models.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/dto/Base.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/dto/RegisterUser.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/internal/dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuvetteFile" beforeDir="false" afterPath="$PROJECT_DIR$/server/BuvetteFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/govno.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/users.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/internal/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/internal/decorators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/decorators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,11 +77,11 @@
       <recent name="D:\Development\Morgana\client\public\internal\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Development\Morgana\server" />
       <recent name="D:\Development\Morgana" />
       <recent name="D:\Development\Morgana\client\src\components\segments\Auth" />
       <recent name="D:\Development\Morgana\client\src\styles" />
       <recent name="D:\Development\Morgana\server\env" />
-      <recent name="D:\Development\Morgana\client" />
     </key>
   </component>
   <component name="RunManager">
@@ -334,6 +133,7 @@
       <workItem from="1659268442109" duration="2585000" />
       <workItem from="1659524269870" duration="1375000" />
       <workItem from="1659558095107" duration="319000" />
+      <workItem from="1659623727709" duration="2251000" />
     </task>
     <servers />
   </component>

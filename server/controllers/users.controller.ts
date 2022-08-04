@@ -10,11 +10,10 @@ class UsersController extends BaseController<UserService> {
         super(userService);
     }
 
-    @useMiddlewareRoute('get', 'get')
+    @useMiddlewareRoute('/get/:zxc', 'get')
     public getshoto(request: Request, response: Response) {
         response.send({
             isAlive: true,
-            data: request.body || null
         })
     }
 
