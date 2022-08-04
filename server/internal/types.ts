@@ -1,6 +1,6 @@
 import {Model, ModelStatic} from "sequelize";
 import { BaseDto } from "../dto/Base.dto";
-
+import {Request, Response} from "express";
 export type METHODS = 'get' | 'post' | 'put' | 'delete' | 'all' | 'patch';
 
 export type DtoField = {
@@ -33,7 +33,7 @@ export interface DATABASE_CONFIG {
     dialect: string;
 }
 
-export interface Response {
+export interface ResponseData {
     statusCode: number;
     statusMessage: string;
     data?: any;
@@ -52,4 +52,9 @@ export type __UNSAFE_DATA = {
     method: METHODS;
     middlewares: Function[]
     __unsafe__group: string;
+    __unsafe__dto: any;
+}
+
+export interface MorganaResponse extends Response {
+    cobol: Cobol;
 }

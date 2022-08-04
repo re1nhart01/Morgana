@@ -29,6 +29,9 @@ export function useRoute(path: string, method: METHODS) {
             method: method,
             path: path,
             middlewares: [],
+            __unsafe__dto: (req, res, next) => {
+                next()
+            }
         }
         target[key].__unsafe_data = unsafeData;
     }
@@ -55,5 +58,17 @@ export function useMiddlewareRoute(middlewareCallback: Function) {
             throw new Error('this controller does not extends BaseController')
         }
         (<__UNSAFE_DATA>target[key].__unsafe_data).middlewares = [...(<__UNSAFE_DATA>target[key].__unsafe_data).middlewares, middlewareCallback];
+    }
+}
+
+export function useDto(dto: any) {
+    return (target: any, key: string, descriptor: PropertyDescriptor) => {
+        if (target.router === void 0) {
+            throw new Error('this controller does not extends BaseController')
+        }
+        (<__UNSAFE_DATA>target[key].__unsafe_data).__unsafe__dto = (req, res, next) => {
+            res.cobol = bindDtoWithRequest(dto, req.body)
+            next()
+        }
     }
 }

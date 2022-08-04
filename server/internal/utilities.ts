@@ -13,7 +13,7 @@ export function useAllRoutes(app: any, controllers: Array<any>) {
             if (typeof field === 'function' && key !== 'constructor') {
                 const group = controller.prototype.__unsafe__group;
                 const data: __UNSAFE_DATA = field.__unsafe_data
-                router[data.method || 'get'](`/${group || 'api'}${data.path || 'default'}`, ...data.middlewares ,(request, response) => {
+                router[data.method || 'get'](`/${group || 'api'}${data.path || 'default'}`, ...data.middlewares , data.__unsafe__dto, (request, response) => {
                     field.apply(controllerImpl, [request, response])
                 })
             }

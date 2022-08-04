@@ -7,11 +7,10 @@
     <list default="true" id="8650e467-93ad-4d87-ae4c-9cd4e9166cae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/users.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/internal/decorators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/decorators.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/internal/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/internal/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/internal/utilities.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/utilities.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/auth.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +129,7 @@
       <workItem from="1659268442109" duration="2585000" />
       <workItem from="1659524269870" duration="1375000" />
       <workItem from="1659558095107" duration="319000" />
-      <workItem from="1659623727709" duration="15106000" />
+      <workItem from="1659623727709" duration="15767000" />
     </task>
     <servers />
   </component>
