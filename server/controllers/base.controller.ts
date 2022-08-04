@@ -13,7 +13,7 @@ interface BaseControllerType {
 export abstract class BaseController<T extends BaseService> implements BaseControllerType {
     protected static _expressRouter: Router = new express.Router()
     public __usafe__group: string;
-    protected constructor(service: T) {
+    protected constructor() {
         this.__usafe__group = 'api';
     }
     public get router() {

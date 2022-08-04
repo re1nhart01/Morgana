@@ -9,7 +9,7 @@ export class AuthService extends BaseService {
         super();
     }
 
-    public registerService(cobol: Cobol): Response {
+    public registerService = (cobol: Cobol): Response => {
         try {
             return Responder.giveOKResponseWithData(cobol)
         } catch (e) {

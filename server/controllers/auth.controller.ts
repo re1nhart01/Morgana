@@ -9,12 +9,13 @@ import {AuthService} from "../services/auth.service";
 @useController('auth')
 class AuthController extends BaseController<any> {
     constructor(public authService: AuthService) {
-        super(authService);
+        super();
         this.authService = new AuthService()
     }
 
     @useRoute('/register', 'post')
     public Register(request: Request, response: Response) {
+        console.log(this, request, response)
         response.send(this.authService.registerService(this.bindJSON(new RegisterUserDto(), request.body)))
     }
 

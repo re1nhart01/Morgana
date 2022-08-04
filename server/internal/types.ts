@@ -5,8 +5,10 @@ export type METHODS = 'get' | 'post' | 'put' | 'delete' | 'all' | 'patch';
 
 export type DtoField = {
     required: boolean;
-    defaultValue: any;
+    defaultValue?: any;
     type: TYPES;
+    min?: number;
+    max?: number;
 }
 
 export type TYPES = "NUMBER" | "STRING" | "BOOLEAN" | "OBJECT" | "ARRAY" | "NULL" | "NONE";
@@ -19,7 +21,7 @@ export interface Dto extends BaseDto {
 export interface Cobol {
     dto: Dto;
     isError: boolean;
-    missingFields: string[];
+    errorsField: ErrorField[];
     errorMessage: string;
 }
 
@@ -35,4 +37,11 @@ export interface Response {
     statusCode: number;
     statusMessage: string;
     data?: any;
+}
+
+export interface ErrorField {
+    isMissing: boolean;
+    name: string;
+    isLessThanMin: boolean;
+    isLongerThanMax: boolean;
 }

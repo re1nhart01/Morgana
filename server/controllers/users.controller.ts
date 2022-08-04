@@ -6,8 +6,9 @@ import {Request, Response} from 'express'
 
 @useController('users')
 class UsersController extends BaseController<UserService> {
-    constructor(public userService: UserService) {
-        super(userService);
+    constructor(private userService: UserService) {
+        super();
+        this.userService = new UserService()
     }
 
     @useMiddlewareRoute('/get/:zxc', 'get')
