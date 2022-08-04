@@ -14,20 +14,22 @@ export const bindDtoWithRequest = <T extends BaseDto>(dto: T, fields: any): Cobo
             const isRequestFieldMax = field.max !== void 0 && fields[i] <= field.max;
             const errorField: ErrorField | any = {}
             if (fields[i] === void 0 && field.required) {
+                isError = true;
                 errorField.isMissing = true;
                 errorField.name = i;
             }
             if (isRequestFieldMin) {
+                isError = true;
                 errorField.name = i;
                 errorField.isLessThanMin = isRequestFieldMin;
             }
             if (isRequestFieldMax) {
+                isError = true;
                 errorField.name = i;
                 errorField.isLongerThanMax = isRequestFieldMax;
             }
 
             if (JSON.stringify(errorsField) !== "{}") {
-                isError = true;
                 errorsField.push(errorField)
             }
             dto[i] = fields[i];

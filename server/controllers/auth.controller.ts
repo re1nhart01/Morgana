@@ -15,7 +15,7 @@ class AuthController extends BaseController<any> {
 
     @useRoute('/register', 'post')
     public Register(request: Request, response: Response) {
-        console.log(this, request, response)
+        console.log(this, 'this', request, response)
         response.send(this.authService.registerService(this.bindJSON(new RegisterUserDto(), request.body)))
     }
 

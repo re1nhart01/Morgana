@@ -45,3 +45,11 @@ export interface ErrorField {
     isLessThanMin: boolean;
     isLongerThanMax: boolean;
 }
+
+
+export type __UNSAFE_DATA = {
+    path: string;
+    method: METHODS;
+    middlewares: Function[]
+    __unsafe__group: string;
+}

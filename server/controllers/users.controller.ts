@@ -11,11 +11,10 @@ class UsersController extends BaseController<UserService> {
         this.userService = new UserService()
     }
 
-    @useMiddlewareRoute('/get/:zxc', 'get')
+    // @useMiddlewareRoute(() => {console.log('from middleware')})
+    @useRoute('/register2', 'post')
     public getshoto(request: Request, response: Response) {
-        response.send({
-            isAlive: true,
-        })
+       console.log(request, response)
     }
 
 }

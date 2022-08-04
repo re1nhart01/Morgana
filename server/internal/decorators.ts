@@ -1,6 +1,9 @@
-import {Dto, METHODS} from "./types";
+import {__UNSAFE_DATA, Dto, METHODS} from "./types";
 import {bindDtoWithRequest} from "./dto";
 import {RegisterUserDto} from "../dto/RegisterUser.dto";
+
+
+
 
 
 /***
@@ -21,13 +24,13 @@ export function useRoute(path: string, method: METHODS) {
         if (target.router === void 0) {
             throw new Error('this controller does not extends BaseController')
         }
-        target[key].__unsafe_data = {
-            path,
-            method,
+        const unsafeData: __UNSAFE_DATA = {
+            __unsafe__group: "",
+            method: method,
+            path: path,
+            middlewares: [],
         }
-        setTimeout(() => {
-            target.router[method](`/${target.__usafe__group}${path}`, target[key])
-        }, 0)
+        target[key].__unsafe_data = unsafeData;
     }
 }
 
@@ -42,18 +45,15 @@ export function useController(group: string): any {
         if (target === void 0) {
             throw new Error('this controller is not correct!')
         }
-        target.prototype.__usafe__group = group;
+        target.prototype.__unsafe__group = group;
     }
 }
 
-export function useMiddlewareRoute(path: string, method: METHODS, ...middlewareCallbacks) {
+export function useMiddlewareRoute(middlewareCallback: Function) {
     return (target: any, key: string, descriptor: PropertyDescriptor) => {
-        if (target.router === void 0 || middlewareCallbacks === void 0) {
+        if (target.router === void 0 || middlewareCallback === void 0) {
             throw new Error('this controller does not extends BaseController')
         }
-        console.log(descriptor.value.toString())
-        setTimeout(() => {
-            target.router[method](`/${target.__usafe__group}${path}`, ...middlewareCallbacks, target[key])
-        }, 0)
+        (<__UNSAFE_DATA>target[key].__unsafe_data).middlewares = [...(<__UNSAFE_DATA>target[key].__unsafe_data).middlewares, middlewareCallback];
     }
 }

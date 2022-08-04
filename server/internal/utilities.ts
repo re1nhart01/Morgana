@@ -1,12 +1,23 @@
-import {BaseModel} from "./types";
+import {__UNSAFE_DATA, BaseModel} from "./types";
 
 
 export function useAllRoutes(app: any, controllers: Array<any>) {
     if (controllers === void 0 || controllers === null) {
         throw new Error('Error corrupted on controllers installing!')
     }
-    controllers.forEach((controller) => {
+    controllers.forEach(function (controller) {
         const controllerImpl = new controller();
+        const router = controllerImpl.router;
+        for (let key of Object.getOwnPropertyNames(controller.prototype)) {
+            const field = controllerImpl[key];
+            if (typeof field === 'function' && key !== 'constructor') {
+                const group = controller.prototype.__unsafe__group;
+                const data: __UNSAFE_DATA = field.__unsafe_data
+                router[data.method || 'get'](`/${group || 'api'}${data.path || 'default'}`, ...data.middlewares ,(request, response) => {
+                    field.apply(controllerImpl, [request, response])
+                })
+            }
+        }
         app.use(controllerImpl.router)
     })
 }
