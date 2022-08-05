@@ -44,6 +44,7 @@ export interface ErrorField {
     name: string;
     isLessThanMin: boolean;
     isLongerThanMax: boolean;
+    isMissingInDto: boolean;
 }
 
 
@@ -57,4 +58,9 @@ export type __UNSAFE_DATA = {
 
 export interface MorganaResponse extends Response {
     cobol: Cobol;
+}
+
+export type TOKENS = {
+    access_token: string;
+    refresh_token: string;
 }

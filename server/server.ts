@@ -1,3 +1,4 @@
+import cors = require("cors");
 import express = require("express");
 import {AuthController} from "./controllers/auth.controller";
 
@@ -16,8 +17,15 @@ class Application extends MorganaApplication {
         return [UserModel];
     }
 
+    private get corsOptions(): cors.CorsOptions {
+        return {
+
+        }
+    }
+
     usings(): void {
        this.appInstance.use(express.json())
+       this.appInstance.use(cors(this.corsOptions))
     }
 
     public get controllers(): any {

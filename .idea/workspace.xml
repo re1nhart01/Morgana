@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8650e467-93ad-4d87-ae4c-9cd4e9166cae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/server/chains/base.chain.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/chains/constants.chain.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/chains/index.chain.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/chains/jwt.chain.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/base.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/base.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dto/RegisterUser.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/dto/RegisterUser.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/dto/Base.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/dto/Base.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/internal/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/internal/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/internal/utilities.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/utilities.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +138,8 @@
       <workItem from="1659268442109" duration="2585000" />
       <workItem from="1659524269870" duration="1375000" />
       <workItem from="1659558095107" duration="319000" />
-      <workItem from="1659623727709" duration="17386000" />
+      <workItem from="1659623727709" duration="17460000" />
+      <workItem from="1659701526170" duration="10254000" />
     </task>
     <servers />
   </component>

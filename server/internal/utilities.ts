@@ -28,7 +28,6 @@ export function useAllModels(models: BaseModel[]) {
     }
     models.forEach(async (model) => {
         try {
-            console.log('zxcxzc')
             console.log(`[database]: Model ${model.name} is trying to sync`)
             model.sync({})
             console.log(`[database]: Model ${model.name} is synced!`)

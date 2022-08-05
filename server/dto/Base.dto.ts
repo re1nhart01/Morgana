@@ -1,3 +1,8 @@
 export class BaseDto {
-    name: string = 'baseDTO';
+    public name: string = 'baseDTO';
+    public data: any;
+    constructor() {
+        this.data = {}
+    }
+
 }

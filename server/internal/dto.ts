@@ -12,7 +12,6 @@ export const bindDtoWithRequest = <T extends BaseDto>(dto: {new (): T}, fields: 
         for (let i in newDto) {
             const field: DtoField = newDto[i] as any;
             const errorField: ErrorField | any = {}
-            console.log(field, fields)
             if (fields[i] === void 0 && field.required) {
                 isError = true;
                 errorField.isMissing = true;
@@ -21,7 +20,6 @@ export const bindDtoWithRequest = <T extends BaseDto>(dto: {new (): T}, fields: 
             if (fields[i] !== void 0) {
                 const isRequestFieldMin = fields[i].length <= field.min;
                 const isRequestFieldMax = fields[i].length >= field.max;
-                console.log(fields[i].length, field.min)
                 if (field.min !== void 0 && isRequestFieldMin) {
                     isError = true;
                     errorField.name = i;
@@ -37,11 +35,13 @@ export const bindDtoWithRequest = <T extends BaseDto>(dto: {new (): T}, fields: 
             if (JSON.stringify(errorField) !== "{}") {
                 errorsField.push(errorField)
             }
-            newDto[i] = fields[i];
+            if (typeof fields[i] !== "function" && fields[i] !== void 0) {
+                newDto.data[i] = fields[i];
+            }
         }
         return {dto: newDto, isError, errorsField, errorMessage: ""}
     } catch (ex) {
         console.log(ex)
-        return {dto, isError: true, errorsField: [], errorMessage: ex}
+        return {dto: new dto(), isError: true, errorsField: [], errorMessage: ex}
     }
 }

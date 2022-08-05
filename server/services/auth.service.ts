@@ -2,6 +2,7 @@ import {BaseService} from "./base.service";
 import {Cobol, ResponseData} from "../internal/types";
 import {Responder} from "../internal/responder";
 import {ReasonPhrases, StatusCodes} from "http-status-codes";
+import {chainTool} from "../chains/index.chain";
 
 
 export class AuthService extends BaseService {
@@ -9,9 +10,10 @@ export class AuthService extends BaseService {
         super();
     }
 
-    public registerService = (cobol: Cobol): ResponseData => {
+    public registerService = async (cobol: Cobol): Promise<ResponseData> => {
         try {
-            return Responder.giveOKResponseWithData(cobol)
+            const {access_token, refresh_token} = await chainTool.jwt.createJWTS(cobol.dto.data)
+            return Responder.giveOKResponseWithData({access_token, refresh_token, dto: cobol.dto.data, errors: cobol.errorsField})
         } catch (e) {
             console.log('registerService ex', e)
             return Responder.giveResponse(StatusCodes.BAD_REQUEST, ReasonPhrases.BAD_REQUEST)

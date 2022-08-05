@@ -1,8 +1,6 @@
 import {BaseController} from "./base.controller";
-import {UserService} from "../services/user.service";
 import {useController, useDto, useRoute} from "../internal/decorators";
-import {Request, Response} from "express";
-import {bindDtoWithRequest} from "../internal/dto";
+import { Request } from "express";
 import {RegisterUserDto} from "../dto/RegisterUser.dto";
 import {AuthService} from "../services/auth.service";
 import {MorganaResponse} from "../internal/types";
@@ -17,8 +15,8 @@ class AuthController extends BaseController<any> {
 
     @useDto(RegisterUserDto)
     @useRoute('/register', 'post')
-    public Register(request: Request, response: MorganaResponse) {
-        response.send(this.authService.registerService(response.cobol));
+    public async Register(request: Request, response: MorganaResponse) {
+        response.send(await this.authService.registerService(response.cobol));
     }
 
 }
