@@ -1,4 +1,4 @@
-import {BaseDto} from "../dto/Base.dto";
+import {BaseDto} from "./core/Base.dto";
 import {Cobol, Dto, DtoField, ErrorField} from "./types";
 
 export const bindDtoWithRequest = <T extends BaseDto>(dto: {new (): T}, fields: any): Cobol => {

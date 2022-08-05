@@ -1,4 +1,4 @@
-import {BaseDto} from "./Base.dto";
+import {BaseDto} from "../internal/core/Base.dto";
 import {DtoField} from "../internal/types";
 
 

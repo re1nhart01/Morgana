@@ -1,5 +1,5 @@
 import {Model, ModelStatic} from "sequelize";
-import { BaseDto } from "../dto/Base.dto";
+import { BaseDto } from "./core/Base.dto";
 import {Request, Response} from "express";
 export type METHODS = 'get' | 'post' | 'put' | 'delete' | 'all' | 'patch';
 

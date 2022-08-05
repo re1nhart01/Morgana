@@ -1,7 +1,7 @@
-import {BaseChain} from "./base.chain";
+import {BaseChain} from "../internal/core/base.chain";
 import * as jwt from 'jsonwebtoken';
 import {TOKENS} from "../internal/types";
-import {chainTool} from "./index.chain";
+import {chainTool} from "../internal/core/index.chain";
 
 
 
@@ -13,6 +13,11 @@ export class JwtChain extends BaseChain<typeof jwt>{
 
     public get privateKey(): string {
         return this.usings.fs.readFileSync(this.usings.path.join(__dirname, "../https/", 'server.key'), {encoding: "utf8"})
+    }
+
+
+    public async validateJWTS(data: TOKENS) {
+
     }
 
     public async createJWTS(data: object): Promise<TOKENS> {

@@ -1,4 +1,4 @@
-import {BaseController} from "./base.controller";
+import {BaseController} from "../internal/core/base.controller";
 import {UserService} from "../services/user.service";
 import {useController, useMiddlewareRoute, useRoute} from "../internal/decorators";
 import {Request, Response} from 'express'

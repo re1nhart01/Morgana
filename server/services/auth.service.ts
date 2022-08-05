@@ -1,8 +1,8 @@
-import {BaseService} from "./base.service";
+import {BaseService} from "../internal/core/base.service";
 import {Cobol, ResponseData} from "../internal/types";
 import {Responder} from "../internal/responder";
 import {ReasonPhrases, StatusCodes} from "http-status-codes";
-import {chainTool} from "../chains/index.chain";
+import {chainTool} from "../internal/core/index.chain";
 
 
 export class AuthService extends BaseService {

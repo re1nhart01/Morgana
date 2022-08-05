@@ -1,4 +1,4 @@
-import {BaseService} from "./base.service";
+import {BaseService} from "../internal/core/base.service";
 
 
 export class UserService extends BaseService {

@@ -1,7 +1,7 @@
-import {BaseService} from "../services/base.service";
+import {BaseService} from "./base.service";
 import {Router} from "express";
-import {BaseDto} from "../dto/Base.dto";
-import {bindDtoWithRequest} from "../internal/dto";
+import {BaseDto} from "./Base.dto";
+import {bindDtoWithRequest} from "../dto";
 const express = require('express');
 
 type Service<T extends BaseService> = {}

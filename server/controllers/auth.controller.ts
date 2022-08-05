@@ -1,4 +1,4 @@
-import {BaseController} from "./base.controller";
+import {BaseController} from "../internal/core/base.controller";
 import {useController, useDto, useRoute} from "../internal/decorators";
 import { Request } from "express";
 import {RegisterUserDto} from "../dto/RegisterUser.dto";

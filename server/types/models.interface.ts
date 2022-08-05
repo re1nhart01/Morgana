@@ -1,4 +1,4 @@
-import {BaseModelType} from "./base.interface";
+import {BaseModelType} from "../internal/core/base.interface";
 
 export interface UserModelType extends BaseModelType {
        username:     string;
