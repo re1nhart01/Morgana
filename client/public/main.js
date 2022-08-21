@@ -22,7 +22,7 @@ function createWindow() {
     },
     darkTheme: true,
     titleBarStyle: 'customButtonsOnHover',
-    frame: false,
+    frame: true,
     minWidth: 1024,
     minHeight: 600,
   })

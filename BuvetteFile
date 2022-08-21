@@ -1,0 +1,5 @@
+@SERVER: [npm run dev]: {PORT=8080, PATH="\server\"}
+@CLIENT: [npm run dev]: {PORT=3000, PATH="\client\"}
+@CREATEMG: [npm run migrate create morgana migration]: {PATH="\server\"}
+@UP: [npm run migrate up]: {PATH="\server\"}
+@DOWN: [npm run migrate down]: {PATH="\server\"}

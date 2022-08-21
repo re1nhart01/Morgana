@@ -1,12 +1,12 @@
 import cors = require("cors");
 import express = require("express");
 import {AuthController} from "./controllers/auth.controller";
-
-require('dotenv').config({path: require('path').join(__dirname, 'env', '.env')})
+const path = require("path")
 import {UsersController} from "./controllers/users.controller";
 import { MorganaApplication } from "./internal/app";
-import {UserModel} from "./models/UserModel";
-
+import {threadRunner} from "./internal/types";
+import {chainTool} from "./internal/core/index.chain";
+const User = require("./models/UserModel")
 
 class Application extends MorganaApplication {
     constructor(PORT: number, HTTPS: boolean) {
@@ -14,13 +14,22 @@ class Application extends MorganaApplication {
     }
 
     public get models(): any[] {
-        return [UserModel];
+        return [User];
+    }
+
+    public get runOnOtherThread(): threadRunner[] {
+        return [{
+            path: path.join(__dirname, "rtc/", "peer.ts"),
+            data: {RTC_PORT: chainTool.constants.processConstants.RTC_PEER_PORT}
+        }];
     }
 
     private get corsOptions(): cors.CorsOptions {
-        return {
+        return {}
+    }
 
-        }
+    get useGlobalURLPath(): string {
+        return "/api";
     }
 
     usings(): void {

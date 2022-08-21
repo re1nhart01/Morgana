@@ -7,14 +7,14 @@ const express = require('express');
 type Service<T extends BaseService> = {}
 
 interface BaseControllerType {
-    __usafe__group?: string;
+    __unsafe__group?: string;
 }
 
 export abstract class BaseController<T extends BaseService> implements BaseControllerType {
     protected static _expressRouter: Router = new express.Router()
-    public __usafe__group: string;
+    public __unsafe__group: string;
     protected constructor() {
-        this.__usafe__group = 'api';
+        this.__unsafe__group = 'api';
     }
     public get router() {
         return BaseController._expressRouter;
@@ -26,11 +26,10 @@ export abstract class BaseController<T extends BaseService> implements BaseContr
 
 
     protected joinRoute = (...endUrls: string[]) => {
-        let result = `/${this.__usafe__group}/`
+        let result = `/${this.__unsafe__group}/`
         for (let i of endUrls) {
             result += `${i}/`
         }
-        console.log(result)
         return result
     }
 

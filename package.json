@@ -2,7 +2,7 @@
   "name": "Morgana",
   "version": "1.0.0",
   "scripts": {
-    "dev": "nodemon ./server.ts",
+    "dev": "ts-node ./server/index.ts",
     "debug": "nodemon --exec \"node --inspect-brk=0.0.0.0:9229 --require ts-node/register src/server.ts\""
   },
   "dependencies": {

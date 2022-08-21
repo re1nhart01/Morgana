@@ -5,23 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8650e467-93ad-4d87-ae4c-9cd4e9166cae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BuvetteFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/bll/Validators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/chains/crypto.chain.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/dto/SignIn.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/internal/core/Base.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/Auth.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/rtc/peer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/threads/runThread.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/chains/base.chain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/core/base.chain.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buv.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/bll/CurrentUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/bll/CurrentUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/bll/GlobalLogic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/bll/GlobalLogic.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/bll/NavigationConfig.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/bll/NavigationConfig.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/global/HomeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/global/HomeScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/global/controllers/WelcomeContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/global/controllers/WelcomeContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/segments/Auth/SignInForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/segments/Auth/SignInForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/segments/Auth/SignUpForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/segments/Auth/SignUpForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/segments/Auth/SignUpView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/segments/Auth/SignUpView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/AuthReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/AuthReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/animations.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/views.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/views.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/BuvetteFile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/chains/constants.chain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/chains/constants.chain.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/chains/index.chain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/core/index.chain.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/chains/jwt.chain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/chains/jwt.chain.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/base.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/core/base.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/users.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dto/Base.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/core/Base.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db/database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/db/database.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/dto/RegisterUser.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/dto/RegisterUser.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/env/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/env/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/internal/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/internal/core/base.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/core/base.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/internal/core/index.chain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/core/index.chain.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/internal/decorators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/decorators.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/internal/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/internal/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/internal/utilities.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/utilities.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/UserModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/UserModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/services/base.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/core/base.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/types/base.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/core/base.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/types/models.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/types/models.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +114,10 @@
       <recent name="D:\Development\Morgana\client\public\internal\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Development\Morgana" />
       <recent name="D:\Development\Morgana\server\internal\core" />
       <recent name="D:\Development\Morgana\server\internal\base" />
       <recent name="D:\Development\Morgana\server" />
-      <recent name="D:\Development\Morgana" />
       <recent name="D:\Development\Morgana\client\src\components\segments\Auth" />
     </key>
   </component>
@@ -142,6 +172,21 @@
       <workItem from="1659558095107" duration="319000" />
       <workItem from="1659623727709" duration="17460000" />
       <workItem from="1659701526170" duration="12753000" />
+      <workItem from="1659961297433" duration="10778000" />
+      <workItem from="1659979032065" duration="1952000" />
+      <workItem from="1660043447664" duration="636000" />
+      <workItem from="1660046157558" duration="5324000" />
+      <workItem from="1660136246500" duration="2481000" />
+      <workItem from="1660301709460" duration="7773000" />
+      <workItem from="1660496109086" duration="4133000" />
+      <workItem from="1660562632195" duration="1090000" />
+      <workItem from="1660669581684" duration="6181000" />
+      <workItem from="1660737641901" duration="5587000" />
+      <workItem from="1660767711736" duration="121000" />
+      <workItem from="1660931377227" duration="8681000" />
+      <workItem from="1660999804703" duration="1379000" />
+      <workItem from="1661029719490" duration="3227000" />
+      <workItem from="1661089053346" duration="7536000" />
     </task>
     <servers />
   </component>

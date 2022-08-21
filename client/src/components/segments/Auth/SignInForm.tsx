@@ -1,15 +1,22 @@
 import React from "react";
 import {Button, Checkbox, Form, Input} from "antd";
-import {Paths, useTypedNavigation} from "../../../bll/NavigationConfig";
+import {application} from "../../../bll/GlobalLogic";
+import {useTypedNavigation} from "../../../hooks/hooks";
+import {Paths} from "../../../bll/NavigationConfig";
 
 
 type signInFormProps = {};
 
 export const SignInForm: React.FC<signInFormProps> = () => {
-    const onFinish = (values: any) => {
-        console.log('Success:', values);
-        alert('asdas')
-
+    const nav = useTypedNavigation()
+    const onFinish = async (values: any) => {
+        const result = await application.User.signIn(values)
+        if (result.statusCode === 200) {
+            alert('You are successfully signed in!')
+            nav(Paths.home, {state: {}})
+        } else {
+            alert('Oops, something went wrong, when you are trying to sign in! :(')
+        }
     }
 
     const onFinishFailed = (error: any) => {

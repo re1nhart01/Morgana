@@ -15,9 +15,35 @@ export class JwtChain extends BaseChain<typeof jwt>{
         return this.usings.fs.readFileSync(this.usings.path.join(__dirname, "../https/", 'server.key'), {encoding: "utf8"})
     }
 
+    public get algs(): {refresh:  jwt.Algorithm, access:  jwt.Algorithm} {
+        return {
+            refresh: "RS256",
+            access: "RS384",
+        }
+    }
 
-    public async validateJWTS(data: TOKENS) {
 
+    public async validateRefreshJWT(token: string) {
+       try {
+           const decoded = jwt.verify(token, this.privateKey, {algorithms: [this.algs.refresh], })
+           if (typeof decoded !== 'string' && decoded.exp === void 0) {
+               return false
+           }
+           return true
+       } catch (e) {
+           console.log(e)
+           return false
+       }
+    }
+
+    public async validateAccessJWT(token: string): Promise<{ userHash: string, iat: number }> {
+        try {
+            const decoded = jwt.verify(token, this.privateKey, {algorithms: [this.algs.access], })
+            return decoded as {userHash: string, iat: number}
+        } catch (e) {
+            console.log('validateAccessJWT ex', e)
+            return null
+        }
     }
 
     public async createJWTS(data: object): Promise<TOKENS> {
@@ -25,10 +51,10 @@ export class JwtChain extends BaseChain<typeof jwt>{
             const key = this.privateKey;
             console.log(data, key)
             const access_token = this.lib.sign(data, key, {
-                algorithm: "RS384",
+                    algorithm: this.algs.access,
             })
             const refresh_token = this.lib.sign(data, key, {
-                algorithm: "RS256",
+                algorithm: this.algs.refresh,
                 expiresIn: '30d'
             })
             return {

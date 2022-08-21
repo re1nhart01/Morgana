@@ -1,7 +1,9 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 
-const auth_initialState = {}
+const auth_initialState = {
+    nigger: ""
+}
 
 const AuthSlice = createSlice({
     name: 'AuthSlice',

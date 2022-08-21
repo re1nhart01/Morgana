@@ -18,12 +18,20 @@ export type BaseModel = ModelStatic<Model>;
 export interface Dto extends BaseDto {
 }
 
+export type TypedDto<T> = Dto & T
+
+export type Injected<T> = () => T;
+
 export interface Cobol {
-    dto: Dto;
     isError: boolean;
     errorsField: ErrorField[];
     errorMessage: string;
 }
+
+export interface TypedCobol<T> extends Cobol {
+    dto: TypedDto<T>
+}
+
 
 export interface DATABASE_CONFIG {
     dbName: string;
@@ -54,13 +62,22 @@ export type __UNSAFE_DATA = {
     middlewares: Function[]
     __unsafe__group: string;
     __unsafe__dto: any;
+    __unsafe__tokens: any;
+
 }
 
 export interface MorganaResponse extends Response {
-    cobol: Cobol;
+    cobol: TypedCobol<any>;
+    tokens: valuableTokens
 }
+export type valuableTokens = { access: string | null; refresh: string | null }
 
 export type TOKENS = {
     access_token: string;
     refresh_token: string;
+}
+
+export type threadRunner = {
+    path: string;
+    data: any;
 }

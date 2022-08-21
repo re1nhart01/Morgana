@@ -5,7 +5,7 @@ import {useNavigate} from "react-router-dom";
 import {SplashScreen} from "../components/global/SplashScreen";
 
 
-type Screen = {
+export type Screen = {
     path: string;
     key?: string;
     caseSensitive?: boolean;
@@ -53,11 +53,4 @@ const NavigationConfig: NavigationConfig = {
     subScreens: []
 }
 
-const useTypedNavigation = () => {
-    const navigation = useNavigate();
-    return (path: Paths, props: {replace?: boolean, state: any}) => {
-        navigation(path as unknown as string, props)
-    }
-}
-
-export {NavigationConfig, ScreensName, useTypedNavigation, Paths }
+export {NavigationConfig, ScreensName, Paths }

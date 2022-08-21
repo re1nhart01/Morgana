@@ -2,7 +2,7 @@
 
 
 .reveal_left {
-  animation: reveal_left_animation 1s linear;
+  animation: reveal_left_animation 1s ease-in-out;
 }
 
 @keyframes reveal_left_animation {
@@ -17,7 +17,7 @@
 }
 
 .reveal_right {
-  animation: reveal_right_animation 1s linear;
+  animation: reveal_right_animation 1s ease-in-out;
 }
 
 @keyframes reveal_right_animation {

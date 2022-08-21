@@ -9,8 +9,6 @@ type signUpViewProps = {
 
 
 const SignUpView: React.FC<signUpViewProps> = ({onChangeAuthPress}) => {
-
-
     const onAlreadyAccount = (flag: boolean) => {
         return () => {
             onChangeAuthPress(flag)
@@ -19,7 +17,7 @@ const SignUpView: React.FC<signUpViewProps> = ({onChangeAuthPress}) => {
     return (
         <div className="screens_welcome_body screens_welcome_body_register">
                 <div className="screens_welcome_registerForm reveal_right">
-                    <SignUpForm />
+                    <SignUpForm onAlreadyAccount={onAlreadyAccount} />
                     <div className="screens_welcome_authForm_no-account">
                         <span>Already have an account? <Button onClick={onAlreadyAccount(false)} type="link" danger>Log In</Button></span>
                     </div>

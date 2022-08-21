@@ -1,6 +1,8 @@
 import { Dialect } from "sequelize";
 import {DATABASE_CONFIG} from "../internal/types";
 const { Sequelize } = require('sequelize');
+require('dotenv').config({path: require('path').join(__dirname, '/../env', '.env')})
+
 
 const config: DATABASE_CONFIG = {
     dbName: process.env.DB_NAME || '',
@@ -12,33 +14,43 @@ const config: DATABASE_CONFIG = {
 
 
 class Database {
-    constructor(private config: DATABASE_CONFIG) {}
-
-    private get sequel() {
-        return Sequelize;
+    private _client: typeof Sequelize;
+    constructor(private config: DATABASE_CONFIG) {
+        this._client = null;
     }
-
     public createDatabaseConnection = () => {
             try {
+                if (this.client !== null) {
+                    return;
+                }
                     const { dialect, host, password, dbName, username } = this.config;
-                    const db = new this.sequel(dbName, username, password, {
-                        host: host,
-                        dialect: dialect,
+                    this._client = new Sequelize(dbName, username, password, {
+                        host,
+                        dialect,
                         logging: (sql: string, timing: number) => {
                             console.log(`OPERATION: ${sql} WAS FIRED: ${new Date().toString()}`)
                         }
                     });
-                db.authenticate().then();
+                this._client.authenticate().then();
                 console.log('Connection has been established successfully.');
-                return db;
             } catch (error) {
                 console.error('Unable to connect to the database:', error);
                 return null;
             }
     }
 
+    public eclipseConnection = () => {
+        if (this.client === void 0 || this.client === null) {
+            this.createDatabaseConnection()
+        }
+        return this;
+    }
+
+    public get client(): typeof Sequelize {
+        return this._client;
+    }
+
 }
 
 
-export const db = new Database(config)
-module.exports = db.createDatabaseConnection();
+module.exports = new Database(config)

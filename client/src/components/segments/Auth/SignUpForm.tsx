@@ -2,14 +2,23 @@ import React from "react";
 import {Button, Checkbox, DatePicker, Form, Input, Upload} from "antd";
 import TextArea from "antd/lib/input/TextArea";
 import {PlusOutlined} from "@ant-design/icons";
+import {application} from "../../../bll/GlobalLogic";
 
-type signUpFormProps = {};
+type signUpFormProps = {
+    onAlreadyAccount(flag: boolean): () => void
+};
 
-export const SignUpForm: React.FC<signUpFormProps> = () => {
+export const SignUpForm: React.FC<signUpFormProps> = ({onAlreadyAccount}) => {
 
 
-    const onFinish = (values: any) => {
-        console.log('Success:', values);
+    const onFinish = async (values: any) => {
+        const result = await application.User.registerUser(values)
+        if (result.statusCode === 200) {
+            alert('You are successfully registered!')
+            onAlreadyAccount(false)()
+        } else {
+            alert('Oops, something went wrong, when you are trying to register! :(')
+        }
     }
 
     const onFinishFailed = (error: any) => {
@@ -30,7 +39,7 @@ export const SignUpForm: React.FC<signUpFormProps> = () => {
                 label="Username"
                 name="username"
                 requiredMark="optional"
-                rules={[{ required: true, message: 'Please input your username!', max: 35, min: 3, whitespace: false, len: 10 }]}
+                rules={[{ required: true, message: 'Please input your username!', max: 35, min: 3, whitespace: false }]}
             >
                 <Input maxLength={35} placeholder="the_spitefulDuck54" className="screens_welcome_authForm_input screens_global_primary_input" />
             </Form.Item>
@@ -41,6 +50,15 @@ export const SignUpForm: React.FC<signUpFormProps> = () => {
                 rules={[{ required: true, message: 'Please input your password!', max: 75, min: 5, whitespace: false }]}
             >
                 <Input  maxLength={75} placeholder="randomStringxddd5421wdq" className="screens_welcome_authForm_input screens_global_primary_input" />
+            </Form.Item>
+            <Form.Item
+                label="Email"
+                name="email"
+                requiredMark="optional"
+
+                rules={[{ type: "email", required: true, message: 'Please input email correct!', max: 75, min: 5, whitespace: false }]}
+            >
+                <Input maxLength={75} placeholder="aboba@gmail.com" className="screens_welcome_authForm_input screens_global_primary_input" />
             </Form.Item>
             <Form.Item
                 label="Repeat"

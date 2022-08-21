@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {WelcomeScreen} from "../WelcomeScreen";
 import {BrowserRouterProps} from "react-router-dom";
+import {useComponentState} from "../../../hooks/hooks";
 
 
 type welcomeContainerProps = {} & BrowserRouterProps
@@ -9,13 +10,13 @@ type welcomeContainerState = {
 }
 
 const WelcomeContainer: React.FC<welcomeContainerProps> = () => {
-    const [getState, setState] = useState<welcomeContainerState>({
+    const [getState, setState] = useComponentState<welcomeContainerState>({
         isSignUp: false,
-    })
+    }, () => {console.log('loaded')}, () => {console.log('unloaded')})
 
 
     const onChangeAuthPress = (flag: boolean) => {
-        setState({...getState, isSignUp: flag})
+        setState('isSignUp', flag)
     }
 
 

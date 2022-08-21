@@ -7,7 +7,16 @@ export class ConstantsChain extends BaseChain<any> {
 
     public get processConstants() {
         return {
-            PORT: process.env.PORT
+            PORT: process.env.PORT,
+            ACCESS_WORD: process.env.ACCESS_WORD,
+            REFRESH_WORD: process.env.REFRESH_WORD,
+            RTC_PEER_PORT: process.env.RTC_PORT,
+        }
+    }
+
+    public get errorMessages() {
+        return {
+            invalidAuth: "Ooops, your username or password is not valid!"
         }
     }
 
