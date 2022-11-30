@@ -4,55 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8650e467-93ad-4d87-ae4c-9cd4e9166cae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BuvetteFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/bll/Validators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/chains/crypto.chain.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/dto/SignIn.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/internal/core/Base.middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/middleware/Auth.middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/rtc/peer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/threads/runThread.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buv.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/bll/CurrentUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/bll/CurrentUser.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/bll/GlobalLogic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/bll/GlobalLogic.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/bll/NavigationConfig.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/bll/NavigationConfig.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/global/HomeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/global/HomeScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/global/controllers/WelcomeContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/global/controllers/WelcomeContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/segments/Auth/SignInForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/segments/Auth/SignInForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/segments/Auth/SignUpForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/segments/Auth/SignUpForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/segments/Auth/SignUpView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/segments/Auth/SignUpView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/AuthReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/reducers/AuthReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/animations.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles/views.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/views.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/BuvetteFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/chains/constants.chain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/chains/constants.chain.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/chains/jwt.chain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/chains/jwt.chain.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/users.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db/database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/db/database.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dto/RegisterUser.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/dto/RegisterUser.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/env/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/env/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/internal/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/internal/core/base.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/core/base.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/internal/core/index.chain.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/core/index.chain.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/internal/decorators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/decorators.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/internal/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/internal/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/internal/utilities.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/internal/utilities.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/UserModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/UserModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/tsconfig.json" afterDir="false" />
-    </list>
+    <list default="true" id="8650e467-93ad-4d87-ae4c-9cd4e9166cae" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,17 +14,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="TypeScript JSX File" />
         <option value="SCSS File" />
         <option value="tsconfig.json" />
+        <option value="JavaScript File" />
         <option value="TypeScript File" />
       </list>
     </option>
   </component>
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="nvolnx7i" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -83,28 +39,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Development/Morgana/server&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Development\\Morgana\\client\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "D:/Development/PettersonTestAPI",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\Development\\Morgana\\client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "HTML"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Development\Morgana\server" />
@@ -114,11 +76,11 @@
       <recent name="D:\Development\Morgana\client\public\internal\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Development\Morgana\server\internal\core\ws" />
       <recent name="D:\Development\Morgana" />
       <recent name="D:\Development\Morgana\server\internal\core" />
       <recent name="D:\Development\Morgana\server\internal\base" />
       <recent name="D:\Development\Morgana\server" />
-      <recent name="D:\Development\Morgana\client\src\components\segments\Auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -186,7 +148,30 @@
       <workItem from="1660931377227" duration="8681000" />
       <workItem from="1660999804703" duration="1379000" />
       <workItem from="1661029719490" duration="3227000" />
-      <workItem from="1661089053346" duration="7536000" />
+      <workItem from="1661089053346" duration="12258000" />
+      <workItem from="1661168873331" duration="1267000" />
+      <workItem from="1661179511830" duration="638000" />
+      <workItem from="1661276544752" duration="1257000" />
+      <workItem from="1661300721012" duration="689000" />
+      <workItem from="1661350859962" duration="604000" />
+      <workItem from="1661353781222" duration="3211000" />
+      <workItem from="1661433209248" duration="19000" />
+      <workItem from="1661444203066" duration="120000" />
+      <workItem from="1661984854834" duration="202000" />
+      <workItem from="1661985098714" duration="297000" />
+      <workItem from="1662040082539" duration="1981000" />
+      <workItem from="1662553566275" duration="596000" />
+      <workItem from="1663510279935" duration="1962000" />
+      <workItem from="1663535439484" duration="5289000" />
+      <workItem from="1663541191464" duration="5615000" />
+      <workItem from="1663570729446" duration="4296000" />
+      <workItem from="1663617075141" duration="675000" />
+      <workItem from="1663683595848" duration="639000" />
+      <workItem from="1663701454278" duration="612000" />
+      <workItem from="1664119761083" duration="834000" />
+      <workItem from="1664375831021" duration="85000" />
+      <workItem from="1664378522069" duration="17000" />
+      <workItem from="1665837092870" duration="1519000" />
     </task>
     <servers />
   </component>

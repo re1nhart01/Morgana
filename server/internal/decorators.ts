@@ -1,7 +1,9 @@
-import {__UNSAFE_DATA, Dto, METHODS} from "./types";
+import {__UNSAFE_DATA, Dto, METHODS, multerConfig, multerMethods} from "./types";
 import {bindDtoWithRequest} from "./dto";
 import {chainTool} from "./core/index.chain";
-
+import {randomUUID} from "crypto";
+import path from "path";
+const multer  = require('multer')
 
 
 
@@ -128,5 +130,49 @@ export function useInjectableModel(model: object | Function): any {
 export function useService(name: string) {
     return (target: any) => {
         target['unsafe__name'] = name;
+    }
+}
+
+
+export function useFile(name: string, method: multerMethods, config: multerConfig) {
+    const upload = multer({
+        storage: method !== "NONE" ? multer.diskStorage({
+            destination: function (req, file, cb) {
+                cb(null, config.dest)
+            },
+            filename: function (req, file, cb) {
+                const filename = config.useUuid ? `${randomUUID()}${path.extname(file.originalname)}` : `${Date.now()}-${file.originalname}`
+                cb(null, filename)
+            }
+        }) : void 0,
+        limits: {
+            fileSize: config.limit
+        },
+        ...(config.fileFilter && {fileFilter: config.fileFilter})
+    })
+    return (target: any, key: string, descriptor: PropertyDescriptor) => {
+        const data = target[key].__unsafe_data;
+        if (data === void 0 || data === null) {
+            throw new Error('Please provide useRoute decorator first, before using useFile decorator!')
+        }
+        let fileMdlwr = null;
+        switch (method) {
+            case "ARRAY":
+                fileMdlwr = (() => (upload.array(name, config.length)))()
+                break
+            case "SINGLE":
+                fileMdlwr = (() => (upload.single(name)))()
+                break
+            case "FIELDS":
+                fileMdlwr = (() => (upload.fields(config.fields)))()
+                break
+            case "NONE":
+                fileMdlwr = (() => (upload.none()))()
+                break
+            default:
+                fileMdlwr = (() => null)()
+                break
+        }
+        data.middlewares.push(fileMdlwr)
     }
 }

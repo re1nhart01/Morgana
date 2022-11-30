@@ -18,7 +18,7 @@ function createWindow() {
       enableRemoteModule: true,
       devTools: true,
       contextIsolation: false,
-      preload: path.join(__dirname, "/internal/preload.js")
+      preload: path.join(__dirname, "/internal/preload.js"),
     },
     darkTheme: true,
     titleBarStyle: 'customButtonsOnHover',
@@ -43,7 +43,8 @@ function createWindow() {
   }
   ipcMain.on('topBar_close', (event, title) => {
     try {
-    app.quit(); console.log('asdasds')
+    app.quit();
+    console.log('[MORGANA]: EXIT!')
   } catch (e) {
   console.log('ex close', e)
   } })

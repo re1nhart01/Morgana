@@ -81,3 +81,35 @@ export type threadRunner = {
     path: string;
     data: any;
 }
+
+export type multerMethods = 'ARRAY' | 'SINGLE' | 'NONE' | 'FIELDS';
+
+
+export type multerConfig = {
+    dest?: string;
+    limit?: number;
+    fileFilter?(req, file, cb): Function;
+    length?: number
+    useUuid?: boolean;
+    fields?: Array<{name: string; maxCount: number}>
+}
+
+
+export type multerFile = {
+    fieldname: string;
+    originalname: string;
+    encoding: string;
+    mimetype: string;
+    destination: string;
+    filename: string;
+    path: string;
+    size: number;
+} | undefined
+
+
+export type ModelTreeNode = {
+    parent: typeof Model;
+    nodes: Array<ModelTreeNode> | null
+}
+
+export type ModelTree = Array<ModelTreeNode>

@@ -44,14 +44,6 @@ export const SignUpForm: React.FC<signUpFormProps> = ({onAlreadyAccount}) => {
                 <Input maxLength={35} placeholder="the_spitefulDuck54" className="screens_welcome_authForm_input screens_global_primary_input" />
             </Form.Item>
             <Form.Item
-                label="Password"
-                name="password"
-                requiredMark="optional"
-                rules={[{ required: true, message: 'Please input your password!', max: 75, min: 5, whitespace: false }]}
-            >
-                <Input  maxLength={75} placeholder="randomStringxddd5421wdq" className="screens_welcome_authForm_input screens_global_primary_input" />
-            </Form.Item>
-            <Form.Item
                 label="Email"
                 name="email"
                 requiredMark="optional"
@@ -59,6 +51,14 @@ export const SignUpForm: React.FC<signUpFormProps> = ({onAlreadyAccount}) => {
                 rules={[{ type: "email", required: true, message: 'Please input email correct!', max: 75, min: 5, whitespace: false }]}
             >
                 <Input maxLength={75} placeholder="aboba@gmail.com" className="screens_welcome_authForm_input screens_global_primary_input" />
+            </Form.Item>
+            <Form.Item
+                label="Password"
+                name="password"
+                requiredMark="optional"
+                rules={[{ required: true, message: 'Please input your password!', max: 75, min: 5, whitespace: false }]}
+            >
+                <Input  maxLength={75} placeholder="randomStringxddd5421wdq" className="screens_welcome_authForm_input screens_global_primary_input" />
             </Form.Item>
             <Form.Item
                 label="Repeat"

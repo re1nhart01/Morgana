@@ -38,16 +38,19 @@ const NavigationConfig: NavigationConfig = {
            element: <HomeScreen />,
            path: Paths.home,
            name: ScreensName.homeScreen,
+           key: '1',
         },
         {
             element: <WelcomeContainer />,
             path: Paths.welcome,
             name: ScreensName.welcomeScreen,
+            key: '2',
         },
         {
             element: <SplashScreen />,
             path: Paths.default,
             name: ScreensName.splashScreen,
+            key: '3',
         }
     ],
     subScreens: []

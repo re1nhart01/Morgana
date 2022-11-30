@@ -8,7 +8,7 @@ import {authMiddleware} from "../middleware/Auth.middleware";
 import {SignInDto} from "../dto/SignIn.dto";
 
 @useController('auth')
-class AuthController extends BaseController<any> {
+class AuthController extends BaseController<AuthService> {
     constructor(public authService: AuthService) {
         super();
         this.authService = new AuthService()

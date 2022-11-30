@@ -11,6 +11,7 @@ export class ConstantsChain extends BaseChain<any> {
             ACCESS_WORD: process.env.ACCESS_WORD,
             REFRESH_WORD: process.env.REFRESH_WORD,
             RTC_PEER_PORT: process.env.RTC_PORT,
+            MAIN_SOCKET_PORT: process.env.MAINSOCKET_PORT,
         }
     }
 

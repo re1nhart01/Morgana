@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import {application} from "./GlobalLogic";
 import axios from 'axios';
+import {mainStore} from "./MainStore";
 
 type userData = {
     birth: number;
@@ -114,7 +115,7 @@ export class CurrentUser {
 
     public restoreUser() {
         try {
-            const data = localStorage.getItem(localStorageKeys.UserData)
+            const data = mainStore.getItem(localStorageKeys.UserData)
             if (data !== void 0 && data !== null) {
                 let parsedData = JSON.parse(data)
                 this._userData.userColor = parsedData.userColor;
@@ -128,7 +129,7 @@ export class CurrentUser {
                 this._userData.theme = parsedData.theme;
                 this._userData.rememberMe = parsedData.rememberMe;
             }
-            const tokens = localStorage.getItem(localStorageKeys.Tokens)
+            const tokens = mainStore.getItem(localStorageKeys.Tokens)
             if (tokens !== void 0 && tokens !== null) {
                 let parsedTokens = JSON.parse(tokens)
                 this._tokens.access_token = parsedTokens.access_token;
@@ -177,8 +178,8 @@ export class CurrentUser {
         try {
             const jsonData = JSON.stringify(this._userData)
             const tokensData = JSON.stringify(this._tokens)
-            localStorage.setItem(localStorageKeys.UserData, jsonData);
-            localStorage.setItem(localStorageKeys.Tokens, tokensData);
+            mainStore.setItem(localStorageKeys.UserData, jsonData);
+            mainStore.setItem(localStorageKeys.Tokens, tokensData);
         } catch (e) {
             console.warn('save user ex', e)
         }

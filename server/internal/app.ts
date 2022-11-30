@@ -1,5 +1,5 @@
 import {useAllModels, useAllRoutes, useAllThreads} from "./utilities";
-import {UsersController} from "../controllers/users.controller";
+import {ModelTree} from "./types";
 
 
 
@@ -10,7 +10,13 @@ const express = require('express');
 const https = require("https");
 
 
-export abstract class MorganaApplication {
+export abstract class CoreApplication {
+    protected abstract get controllers(): any[];
+    protected abstract usings(): void;
+    protected abstract get runOnOtherThread(): {path: string; data: any}[];
+    protected abstract get useGlobalURLPath(): string | null;
+    protected abstract get modelsTree(): ModelTree;
+    protected abstract preStart(): void;
     private readonly _port: number | null;
     private readonly _application: any;
     private readonly _isHttps: boolean;
@@ -19,6 +25,42 @@ export abstract class MorganaApplication {
         this._application = express();
         this._isHttps = HTTPS;
     }
+
+    private beforeStart = async () => {
+        try {
+            await this.usings()
+            await require('../db/database').createDatabaseConnection()
+            await useAllRoutes(this._application, this.controllers, this.useGlobalURLPath)
+            await useAllModels(this.modelsTree)
+            await this.preStart()
+        } catch (e) {
+            console.log('beforeStart ex ', e)
+        }
+    }
+
+    private afterStart = async () => {
+        try {
+            await useAllThreads(this.runOnOtherThread)
+        } catch (e) {
+            console.log('afterStart ex ', e)
+        }
+    }
+
+
+    private runnable = async () => {
+        await this.afterStart()
+        console.log(`[server]: Server is running at ${this._isHttps ? 'https' : 'http'}://localhost:${this._port}`);
+    }
+
+    public async run() {
+        try {
+            await this.beforeStart()
+            this.appInstance.listen(this._port, this.runnable)
+        } catch (ex) {
+            console.log('Error on server running!', ex)
+        }
+    }
+
     private get httpsServer() {
         return https
             .createServer(
@@ -32,26 +74,6 @@ export abstract class MorganaApplication {
 
     public get appInstance() {
         return this._isHttps ? this.httpsServer : this.httpServer;
-    }
-
-    public abstract get controllers(): any[];
-    public abstract get models(): any[];
-    public abstract usings(): void;
-    public abstract get runOnOtherThread(): {path: string; data: any}[];
-    public abstract get useGlobalURLPath(): string | null;
-    public async run() {
-        try {
-            await this.usings()
-            require('../db/database').createDatabaseConnection()
-            useAllRoutes(this._application, this.controllers, this.useGlobalURLPath)
-            useAllModels(this.models)
-            this.appInstance.listen(this._port, async () => {
-                await useAllThreads(this.runOnOtherThread)
-                console.log(`[server]: Server is running at ${this._isHttps ? 'https' : 'http'}://localhost:${this._port}`);
-            })
-        } catch (ex) {
-            console.log('Error on server running!', ex)
-        }
     }
 
     private get httpServer() {

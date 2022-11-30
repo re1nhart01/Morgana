@@ -83,7 +83,7 @@ export class AuthService extends BaseService {
                     const requestedUser = await this.userRepository().findOne({
                         where: {
                             userHash: {
-                                [Op.eq]: decodeAccess.userHash + 'asdas',
+                                [Op.eq]: decodeAccess.userHash,
                             },
                             isactive: {
                                 [Op.eq]: true,

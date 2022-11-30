@@ -23,18 +23,33 @@ export function useAllRoutes(app: any, controllers: Array<any>, apiStartURL: str
     })
 }
 
-export function useAllModels(models: BaseModel[]) {
-    if (models === void 0 || models === null) {
-        throw new Error('Error corrupted on models syncing!')
+export async function useAllModels(data) {
+    if (data === void 0 || data === null) {
+        return;
     }
-    models.forEach(async (model) => {
-        try {
-            console.log(`[database]: Model ${model.name} is trying to sync`)
-            model.sync({})
-            console.log(`[database]: Model ${model.name} is synced!`)
-        } catch (e) {
-            console.log('useAllModels ex', e)
+    data.forEach((item) => {
+        const nodeItems = [];
+        const main = item.parent;
+        let subItems = [];
+        if (Array.isArray(item.nodes)) {
+            item.nodes.forEach((subItem) => {
+                if (subItem.parent !== void 0 && subItem.parent !== null) {
+                    nodeItems.push(subItem.parent)
+                }
+                if (Array.isArray(subItem.nodes)) {
+                    subItems = [...subItems, ...subItem.nodes]
+                }
+            })
         }
+        main.sync().then(() => {
+            if (nodeItems.length > 0) {
+                const callbacks = nodeItems.map((item) => item.sync())
+                Promise.all(callbacks)
+                if (subItems.length > 0) {
+                    useAllModels(subItems)
+                }
+            }
+        })
     })
 }
 
